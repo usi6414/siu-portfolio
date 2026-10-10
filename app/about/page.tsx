@@ -8,17 +8,14 @@ export default function AboutPage() {
       <section className="flex flex-col gap-2">
         <h2 className="text-lg font-medium text-black dark:text-zinc-50">기본 정보</h2>
         <p className="text-zinc-700 dark:text-zinc-300">이름: 유시우</p>
-        <p className="text-zinc-700 dark:text-zinc-300">학년: 대학교 2학년 (IT 전공)</p>
+        <p className="text-zinc-700 dark:text-zinc-300">학년: 대학교 2학년</p>
       </section>
 
       <section className="flex flex-col gap-2">
         <h2 className="text-lg font-medium text-black dark:text-zinc-50">배우고 있는 것</h2>
         <ul className="list-disc pl-5 text-zinc-700 dark:text-zinc-300">
-          <li>HTML, CSS, JavaScript</li>
           <li>Next.js, React</li>
           <li>MongoDB (Mongoose)</li>
-          <li>Git, GitHub, Vercel 배포</li>
-          <li>C 언어 기반 자료구조와 알고리즘</li>
         </ul>
       </section>
 

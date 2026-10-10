@@ -35,5 +35,6 @@ export default function NewGuestbookPage() {
         <SubmitButton label="등록하기" />
       </form>
     </div>
+    
   );
 }

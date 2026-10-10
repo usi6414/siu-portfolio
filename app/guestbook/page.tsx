@@ -28,6 +28,9 @@ export default async function GuestbookPage() {
           </li>
         ))}
       </ul>
+      <Link href="/" className="mt-8 inline-block text-sm text-zinc-500 hover:underline">
+        ← Home으로 이동하기
+      </Link>
     </div>
   )
 }
