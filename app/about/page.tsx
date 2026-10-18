@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <div className="mx-auto flex max-w-2xl flex-1 flex-col gap-6 px-8 py-16">
-      <h1 className="text-2xl font-semibold text-black dark:text-zinc-50">소개</h1>
+      <h1 className="text-2xl font-semibold text-black dark:text-zinc-50  border-l-4 border-amber-500 pl-3">소개</h1>
 
       <section className="flex flex-col gap-2">
         <h2 className="text-lg font-medium text-black dark:text-zinc-50">기본 정보</h2>

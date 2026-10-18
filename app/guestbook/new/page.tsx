@@ -4,7 +4,7 @@ import { SubmitButton } from "@/components/SubmitButton";
 export default function NewGuestbookPage() {
   return (
     <div className="mx-auto flex max-w-2xl flex-1 flex-col gap-6 px-8 py-16">
-      <h1 className="text-2xl font-semibold text-black dark:text-zinc-50">방명록 작성</h1>
+      <h1 className="text-2xl font-semibold text-black dark:text-zinc-50  border-l-4 border-amber-500 pl-3">방명록 작성</h1>
       <form action={createGuestbookAction} className="flex flex-col gap-4">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="author" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">

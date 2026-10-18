@@ -17,9 +17,22 @@ export default async function ProjectDetailPage({ params }: Props) {
       <Link href="/projects" className="text-sm text-zinc-500 hover:underline">
         ← 목록으로
       </Link>
-      <h1 className="text-2xl font-semibold text-black dark:text-zinc-50">{project.name}</h1>
+      <h1 className="text-2xl font-semibold text-black dark:text-zinc-50  border-l-4 border-amber-500 pl-3">{project.name}</h1>
       <p className="text-sm text-zinc-500 dark:text-zinc-400">사용 기술: {project.tech}</p>
       <p className="leading-7 text-zinc-700 dark:text-zinc-300">{project.detail}</p>
+            <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-medium text-black dark:text-zinc-50">배운 내용</h2>
+        <ul className="list-disc pl-5 leading-7 text-zinc-700 dark:text-zinc-300">
+          {project.learned.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-medium text-black dark:text-zinc-50">느낀 점</h2>
+        <p className="leading-7 text-zinc-700 dark:text-zinc-300">{project.review}</p>
+      </section>
       <a
         href={project.link}
         className="text-sm font-medium text-zinc-950 underline underline-offset-4 dark:text-zinc-50"
