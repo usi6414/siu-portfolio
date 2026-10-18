@@ -3,6 +3,7 @@
 import { revalidatePath } from "next/cache"
 import { redirect } from "next/navigation"
 import { createGuestbook } from "@/lib/guestbook"
+import { likeProject } from "@/lib/projects"
 
 export async function createGuestbookAction(formData: FormData) {
     const author = String(formData.get("author") ?? "").trim()
@@ -18,5 +19,10 @@ export async function createGuestbookAction(formData: FormData) {
 
     await createGuestbook({ author, content })
     revalidatePath("/guestbook")
+        revalidatePath("/")
     redirect("/guestbook")
+}
+
+export async function likeProjectAction(id: string) {
+    return likeProject(id)
 }
